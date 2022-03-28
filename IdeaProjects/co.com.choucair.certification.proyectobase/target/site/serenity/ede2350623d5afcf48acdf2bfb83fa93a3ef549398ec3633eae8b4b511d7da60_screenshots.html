@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f3e0aee2d36db2de02df1ad23931a28450e3f265480966a89d3e7d57c3a3ccb8.html">Sign In Form</a></span>
+                > <span class="truncate-60"><a
+                    href="ede2350623d5afcf48acdf2bfb83fa93a3ef549398ec3633eae8b4b511d7da60.html">Open sign in form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-03-2022 22:11</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Sign In Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="1d0c02fb9cb969bbd9e2f900ec6333e01b070c6fb5e26345e9374169cfab9e68.html">Regression
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Open sign in form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given than Sara wants to sign in on Utest.com page.<br>When Sara fills out about you from fields &lt;firstName&gt;, &lt;lastName&gt;, &lt;email&gt;, &lt;birthMonth&gt;, &lt;birthDay&gt;, &lt;birthYear&gt;, &lt;language&gt;.<br>And Sara fills out location form fields &lt;city&gt;, &lt;zipCode&gt;, &lt;country&gt;.<br>And Sara fills out devices form fields &lt;yourComputers&gt;, &lt;version&gt;, &lt;languages&gt;, &lt;mobileDevices&gt;, &lt;model&gt;, &lt;operatingSystem&gt;.<br>And Sara fills out last step form fields &lt;password&gt;, &lt;confirmPassword&gt;.<br>Then Sara had sign in succesfully.</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f1582f000b6a066d897f347f856a8e9a5336c0b64d8d287245d68ee9db1b9596.png" title=" Example #1: {firstName=Sara, lastName=Osorio, email=osoriosara98@gmail.com, birthMonth=June, birthDay=29, birthYear=1998, language=Spanish, city=Medellin, zipCode=12345, country=Colombia, yourComputers=Windows, version=10, languages=Spanish, mobileDevices=Apple, model=iPhone3G, operatingSystem=iOS 4.0, password=2090780S*password, confirmPassword=2090780S*password}" width="1920"/>
+                <img src="f1582f000b6a066d897f347f856a8e9a5336c0b64d8d287245d68ee9db1b9596.png" title=" Given than Sara wants to sign in on Utest.com page." width="1920"/>
+                <img src="f1582f000b6a066d897f347f856a8e9a5336c0b64d8d287245d68ee9db1b9596.png" title=" Sara open up" width="1920"/>
+                <img src="f1582f000b6a066d897f347f856a8e9a5336c0b64d8d287245d68ee9db1b9596.png" title=" Sara opens the Utest main page" width="1920"/>
+                <img src="f0336acade4170dbc44be8184d8ec2a2c5338128c5265c8ff6ca57e68632feca.png" title=" Sara clicks on button that shows us the form to login" width="1920"/>
+                <img src="f0336acade4170dbc44be8184d8ec2a2c5338128c5265c8ff6ca57e68632feca.png" title=" Sara open up (completed)" width="1920"/>
+                <img src="f0336acade4170dbc44be8184d8ec2a2c5338128c5265c8ff6ca57e68632feca.png" title=" Given than Sara wants to sign in on Utest.com page. (completed)" width="1920"/>
+                <img src="5c1c9d3eb4453dba9526e8c62c5c6a1b853b1fcf9f47bdeb31e726f8e4d985a4.png" title=" When Sara fills out about you from fields Sara, Osorio, osoriosara98@gmail.com, June, 29, 1998, Spanish." width="1920"/>
+                <img src="5c1c9d3eb4453dba9526e8c62c5c6a1b853b1fcf9f47bdeb31e726f8e4d985a4.png" title=" Sara about you form" width="1920"/>
+                <img src="5c1c9d3eb4453dba9526e8c62c5c6a1b853b1fcf9f47bdeb31e726f8e4d985a4.png" title=" Sara enters 'Sara' into Text that receives the first name" width="1920"/>
+                <img src="5e63464692b30c7e7d7ec7ca35d926c39757c5b50a8d35638a7e3976f926ebe7.png" title=" Sara enters 'Osorio' into Text that receives the last name" width="1920"/>
+                <img src="49f72874a6ab2f611ad56cf420f8a66b9bcc66abc09f21db3c0906f7ac612b22.png" title=" Sara enters 'osoriosara98@gmail.com' into Text that receives the email address" width="1920"/>
+                <img src="b9dde95f13119f6bc5ee724ecf9894e5bd4b2de5cd8a88b6f515371e90a86a08.png" title=" Sara select June on Selector that allows to select the DOB month" width="1920"/>
+                <img src="f540187388b8f7b5f2b2a6c1cbdcd26eb4ecc6bd102695dd9c91f29989e5295e.png" title=" Sara select 29 on Selector that allows to select the DOB  day" width="1920"/>
+                <img src="cc7044e1b8a3d532bc09d1f3b16230a795f8800b572055bbc4e090c04630b62e.png" title=" Sara select 1998 on Selector that allows to select the DOB year" width="1920"/>
+                <img src="6f7341f3df5ec585a54533391c33d2b4d1b3dbd7eaa0288792a6f86a32e494d8.png" title=" Sara enters ' Spanish' into Selector that allows to select the spoken language" width="1920"/>
+                <img src="17d8d47e1155da84fdd8b370a22167bdd3ab60962a787a44c06793f790b6ba4c.png" title=" Sara types 'ENTER' in Selector that allows to select the spoken language" width="1920"/>
+                <img src="877f55df06511816176615c2deb2c8868949505e6c8835800881f2995499a2b5.png" title=" Sara clicks on button that shows us the location's page" width="1920"/>
+                <img src="877f55df06511816176615c2deb2c8868949505e6c8835800881f2995499a2b5.png" title=" Sara about you form (completed)" width="1920"/>
+                <img src="877f55df06511816176615c2deb2c8868949505e6c8835800881f2995499a2b5.png" title=" When Sara fills out about you from fields Sara, Osorio, osoriosara98@gmail.com, June, 29, 1998, Spanish. (completed)" width="1920"/>
+                <img src="ecc9fe4d8bb166c35f4e46ec608fdd1921157887703d9b1735e7f7b0ff404b40.png" title=" And Sara fills out location form fields Medellin, 12345, Colombia." width="1920"/>
+                <img src="ecc9fe4d8bb166c35f4e46ec608fdd1921157887703d9b1735e7f7b0ff404b40.png" title=" Sara location form" width="1920"/>
+                <img src="ecc9fe4d8bb166c35f4e46ec608fdd1921157887703d9b1735e7f7b0ff404b40.png" title=" Sara enters 'Medellin' into Selector that allows to select the city" width="1920"/>
+                <img src="e26651fb0a2e53081238fddda5ab83037a5599c29d7bc0e931ec53ec04c44349.png" title=" Sara types 'ARROW_DOWN' in Selector that allows to select the city" width="1920"/>
+                <img src="86de1079ac5a2cd19d804866e1ccdfe35f39fcb7c0d95f2d91ab42cd44f62e54.png" title=" Sara types 'ENTER' in Selector that allows to select the city" width="1920"/>
+                <img src="9da57d4a413d4c38bec98d77c0170ef759879d4562ad3a9cf333e4d064c10283.png" title=" Sara enters '12345' into Text that receives the zip code" width="1920"/>
+                <img src="f2e0f8b7e8e304269de33affc912cd435f247bf2ad9bc9306adaf742978598f6.png" title=" Sara clicks on button that shows us the devices' page" width="1920"/>
+                <img src="f2e0f8b7e8e304269de33affc912cd435f247bf2ad9bc9306adaf742978598f6.png" title=" Sara location form (completed)" width="1920"/>
+                <img src="f2e0f8b7e8e304269de33affc912cd435f247bf2ad9bc9306adaf742978598f6.png" title=" And Sara fills out location form fields Medellin, 12345, Colombia. (completed)" width="1920"/>
+                <img src="509d3ce1fe4462a2e68e77f13de52d94d7ef3975892a275772a56fec048b6a8b.png" title=" And Sara fills out devices form fields Windows, 10, Spanish, Apple, iPhone3G, iOS 4.0." width="1920"/>
+                <img src="509d3ce1fe4462a2e68e77f13de52d94d7ef3975892a275772a56fec048b6a8b.png" title=" Sara devices form" width="1920"/>
+                <img src="509d3ce1fe4462a2e68e77f13de52d94d7ef3975892a275772a56fec048b6a8b.png" title=" Sara clicks on button that shows us the next step's page" width="1920"/>
+                <img src="509d3ce1fe4462a2e68e77f13de52d94d7ef3975892a275772a56fec048b6a8b.png" title=" Sara devices form (completed)" width="1920"/>
+                <img src="509d3ce1fe4462a2e68e77f13de52d94d7ef3975892a275772a56fec048b6a8b.png" title=" And Sara fills out devices form fields Windows, 10, Spanish, Apple, iPhone3G, iOS 4.0. (completed)" width="1920"/>
+                <img src="78ad0fbd14c8b05cc836c9518f192de69f2a530e920c7cb513cd30c3b698d329.png" title=" And Sara fills out last step form fields 2090780S*password, 2090780S*password." width="1920"/>
+                <img src="78ad0fbd14c8b05cc836c9518f192de69f2a530e920c7cb513cd30c3b698d329.png" title=" Sara last step form" width="1920"/>
+                <img src="78ad0fbd14c8b05cc836c9518f192de69f2a530e920c7cb513cd30c3b698d329.png" title=" Sara enters '2090780S*password' into Text that receives the password" width="1920"/>
+                <img src="b02e99e758b9b7679b9c5ae263fe99df5859e0728fc848fd4085da0fc1f39991.png" title=" Sara enters '2090780S*password' into Text that receives the password's confirmation" width="1920"/>
+                <img src="d0d79a38149e3c492d082f068fa57d750c2a02d12cb157da8116059cf8315e8b.png" title=" Sara clicks on Selector that allows to select stay informed option" width="1920"/>
+                <img src="b61403bd73dcd3c0745a79690776de52384920c5113fda3cd411ad7276c3f1c2.png" title=" Sara clicks on Selector that allows to accept the privacy policy" width="1920"/>
+                <img src="4661c68dccc70edf0ea02a573af8a83e0455e9b2974c6e4bcae9322eaa41284a.png" title=" Sara clicks on Selector that allows to select acceptance option" width="1920"/>
+                <img src="79971cd751ff60f2a96b3722038897b0f515789a58b2dc8652273a8722e92971.png" title=" Sara clicks on button that allows us to submit the information" width="1920"/>
+                <img src="79971cd751ff60f2a96b3722038897b0f515789a58b2dc8652273a8722e92971.png" title=" Sara last step form (completed)" width="1920"/>
+                <img src="79971cd751ff60f2a96b3722038897b0f515789a58b2dc8652273a8722e92971.png" title=" And Sara fills out last step form fields 2090780S*password, 2090780S*password. (completed)" width="1920"/>
+                <img src="79971cd751ff60f2a96b3722038897b0f515789a58b2dc8652273a8722e92971.png" title=" Then Sara had sign in succesfully." width="1920"/>
+                <img src="79971cd751ff60f2a96b3722038897b0f515789a58b2dc8652273a8722e92971.png" title=" Example #1: {firstName=Sara, lastName=Osorio, email=osoriosara98@gmail.com, birthMonth=June, birthDay=29, birthYear=1998, language=Spanish, city=Medellin, zipCode=12345, country=Colombia, yourComputers=Windows, version=10, languages=Spanish, mobileDevices=Apple, model=iPhone3G, operatingSystem=iOS 4.0, password=2090780S*password, confirmPassword=2090780S*password} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.30</span>
+</div>
+</body>
+</html>
