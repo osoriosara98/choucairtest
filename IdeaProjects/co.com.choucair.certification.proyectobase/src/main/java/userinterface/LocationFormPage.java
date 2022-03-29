@@ -17,7 +17,12 @@ public class LocationFormPage extends PageObject {
 
     public static final Target COUNTRY_SELECTOR = Target
             .the("Selector that allows to select the country")
+            .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]"));
+
+    public static final Target COUNTRY_SELECTOR_TWO = Target
+            .the("input that allows type the country")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/div/input[1]"));
+
 
     public static final Target NEXT_DEVICES_BUTTON = Target
             .the("button that shows us the devices' page")

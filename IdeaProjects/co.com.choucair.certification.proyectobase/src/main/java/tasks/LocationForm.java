@@ -33,8 +33,9 @@ public class LocationForm implements Task {
                 Hit.the(Keys.ARROW_DOWN).keyIn(locationFormPage.CITY_TEXT),
                 Hit.the(Keys.ENTER).keyIn(locationFormPage.CITY_TEXT),
                 Enter.theValue(zipCode).into(locationFormPage.ZIP_CODE_TEXT),
+                Click.on(locationFormPage.COUNTRY_SELECTOR),
+                Enter.theValue(country).into(locationFormPage.COUNTRY_SELECTOR_TWO),
+                Hit.the(Keys.ENTER).keyIn(locationFormPage.COUNTRY_SELECTOR_TWO),
                 Click.on(locationFormPage.NEXT_DEVICES_BUTTON));
-
-
     }
 }

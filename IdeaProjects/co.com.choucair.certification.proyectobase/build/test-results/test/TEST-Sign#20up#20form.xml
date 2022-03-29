@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Sign up form" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-28T03:31:12" hostname="LAPTOP-DHB8036H" time="36.829">
+<testsuite name="Sign up form" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-29T02:30:27" hostname="LAPTOP-DHB8036H" time="95.508">
   <properties/>
-  <testcase name="sign up on utest page" classname="Sign up form" time="36.829"/>
+  <testcase name="sign up on utest page" classname="Sign up form" time="95.508"/>
   <system-out><![CDATA[
 
 
@@ -37,14 +37,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]]></system-out>
-  <system-err><![CDATA[mar 27, 2022 10:31:13 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[mar 28, 2022 9:30:28 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 29179
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 43906
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar 27, 2022 10:31:15 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+mar 28, 2022 9:30:30 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  

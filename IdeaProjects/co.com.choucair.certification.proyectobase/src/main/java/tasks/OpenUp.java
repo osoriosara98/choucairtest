@@ -18,7 +18,5 @@ public class OpenUp implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(utestMainPage));
         actor.attemptsTo(Click.on(utestMainPage.JOIN_TODAY_BUTTON));
-
-
     }
 }

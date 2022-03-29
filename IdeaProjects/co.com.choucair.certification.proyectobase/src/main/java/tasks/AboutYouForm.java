@@ -33,7 +33,6 @@ public class AboutYouForm implements Task {
     }
 
 
-
     public static AboutYouForm fillOutAboutYouForm(String firstName, String lastName, String email, String birthMonth,
                                                    String birthDay, String birthYear, String language) {
         return Tasks.instrumented(AboutYouForm.class, firstName, lastName, email, birthMonth, birthDay, birthYear, language);
